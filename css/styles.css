@@ -1,0 +1,56 @@
+body {
+  background-color: #ffffff;
+}
+
+p {
+  margin: 11px 0 0 0;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  float: left;
+  left: calc(3% + 64px);
+  color: #000000;
+}
+
+.HeaderSignedIn {
+  position: relative;
+  width: 327px;
+  height: 48px;
+  left: calc(50% - 327px/2 - 0.5px);
+}
+
+.Logo {
+  position: relative;
+  width: 85.42px;
+  height: 30px;
+  left: calc(100% - 477px/2 - 0.5px);
+  padding-top: 4px;
+}
+
+.listings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 327px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Card {
+  width: 327px;
+  height: 232px;
+}
+
+.bottom-div {
+  position: sticky;
+  bottom: 0;
+}
+
+.BottomNav {
+  position: relative;
+  width: 375px;
+  height: 68px;
+  left: calc(50% - 375px/2 - 0.5px);
+}
