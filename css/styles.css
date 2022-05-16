@@ -15,12 +15,17 @@ p {
   color: #000000;
 }
 
+.header-div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
 .HeaderSignedIn {
-  position: relative;
+  display: inline-block;
   width: 327px;
   height: 48px;
-  left: calc(50% - 327px/2 - 0.5px);
-}
+  }
 
 .Logo {
   position: relative;
@@ -44,13 +49,42 @@ p {
 }
 
 .bottom-div {
+  display: flex;
+  justify-content: center;
   position: sticky;
   bottom: 0;
 }
 
 .BottomNav {
-  position: relative;
+  display: inline-block;
   width: 375px;
   height: 68px;
-  left: calc(50% - 375px/2 - 0.5px);
+}
+
+@media only screen and (max-width: 660px) {
+  .listings-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  p {
+    left: 10%;
+  }
+  .Logo {
+    left: 50%;
+  }
+  .HeaderSignedIn {
+    max-width: 100%;
+    height: auto;
+  }
+  .Card {
+    max-width: 100%;
+    height: auto;
+  }
+  .BottomNav {
+    max-width: 100%;
+    height: auto;
+  }
 }
